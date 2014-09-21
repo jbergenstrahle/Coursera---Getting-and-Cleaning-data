@@ -12,14 +12,23 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 Check the readme.md file for detailed instructions to run the provided R-script that transforms the data into a tidy data set.
 The run_analysis.R script does the following to the downloaded data:
+
 1. Adds the subject data (i.e. subject number id) to the train and test data sets respectively.
+
 2. Adds the activity data (i.e. activity id) to the train and test data sets respectively.
+
 3. Merges the two created data frames into one. This creates a 10299x563 sized data frame.
+
 4. The feature variables of interest (i.e. mean and standard deviation measurements) are selected from the merged data frame into a new data frame.
+
 5. The numeric activity ID are substituted to descriptive names.
+
 6. The columns (3:68) containing the measured mean and std data are given descriptive variable headers according to the names provided in features.txt from the original data set. 
+
 7. The "dplyr" package is used to group the data by activity and subject id.
+
 8. According to the grouping in step 7, the mean of each measured variable are calculated.
+
 9. A .txt file with the tidy data set is created in the working directory. 
 
 ####Tidy data set variable description
