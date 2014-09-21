@@ -1,7 +1,3 @@
----
-title: "CodeBook - Getting and cleaning data project"
-output: html_document
----
 
 ####Original data source
 
